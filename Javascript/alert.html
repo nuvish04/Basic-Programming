@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<script>
+        function che()
+        {
+            var n=document.alertform.name.value;
+            if(n=="")
+            {
+                alert("Enter Your Name!!");
+                document.alertform.name.focus();
+                return false;
+            }
+            var ad=document.alertform.add.value;
+            if(ad=="")
+            {
+                alert("Enter Your Address!!");
+                document.alertform.add.focus();
+                return false;
+            }
+            var em=document.alertform.email.value;
+            if(em=="")
+            {
+                alert("Enter Your Email!!");
+                document.alertform.email.focus();
+                return false;
+            }
+            var db=document.alertform.dob.value;
+            if(db=="")
+            {
+                alert("Enter Your Date Of Birth!!");
+                document.alertform.dob.focus();
+                return false;
+            }
+            var fl=document.alertform.img.value;
+            if(fl=="")
+            {
+                alert("Upload Your File!!");
+                document.alertform.img.focus();
+                return false;
+            }
+            var gen=document.alertform.gender.value;
+            if(gen=="")
+            {
+                alert("Enter Your Gender!!");
+                document.alertform.gender[1].focus();
+                return false;
+            }
+            var ph=document.alertform.phone.value;
+            if(ph.length!=10)
+            {
+                alert("Enter Your Phone Number!!");
+                document.alertform.phone.focus();
+                return false;
+            }
+            if(document.alertform.lang.checked==false && document.alertform.lan.checked==false && document.alertform.la.checked==false)
+            {
+                alert("Choose Your Languages!!");
+                document.alertform.lang.focus();
+                document.alertform.lan.focus();
+                document.alertform.la.focus();
+                return false;
+            }
+            var state=document.alertform.state.value;
+            if(state=="hi")
+            {
+                alert("Select Your State!!");
+                document.alertform.state.focus();
+                return false;
+            }
+            var pass=document.alertform.pass.value;
+            if(pass.length< 8 || pass.length >16 )
+            {
+                alert("Enter Your Password Correctly!!");
+                document.alertform.pass.focus();
+                return false;
+            }
+        }
+</script>
+<body>
+<form name="alertform" action="jsimg.html" method="post" ><h1 align="center">Registration Form</h1>
+    <table bgcolor="#f1f1f1" align="center" border = "1"  cellpadding="6">
+    <tr>
+        <th>Name :</th><td><input type="text" name="name"></td>
+        </tr>
+    <tr>
+    <th>Address:</th><td><textarea name="add"></textarea></td></tr>
+    <tr>
+        <th>Email:</th><td><input type="email"name="email"></td></tr>
+    <tr>
+    <th>DOB:</th><td><input type="date" name="dob"></td></tr>
+    <tr><th>Image:</th><td><input type="file" name="img"></td></tr>
+    <tr><th>Gender:</th><td><input type="radio" name="gender">Male<input type="radio" name="gender">Female<input type="radio" name="gender">Others</td></tr>
+    <tr><th>Phone :</th><td><input name="phone" type="number"></td></tr>
+    <tr><th>Language :</th><td> <input type="checkbox" name="lang">English
+    <input type="checkbox" name="lan">Malayalam
+        <input type="checkbox" name="la"> Hindi</td></tr>
+    <tr><th>State :</th><td><select name="state">
+        <option value="hi">---Select---</option>
+    <option>Kerala</option>
+    <option>Karnataka</option>
+    <option>Tamilnadu</option></td>
+    </select></tr>
+    <tr><th> Password :</th><td><input name="pass" type="password"></td></tr>
+    <tr><th colspan="2"><input type="submit" name="submit" value="Register" onclick="return che()">          <input type="reset" value="Clear"></th> </tr>
+    </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS Paragraph</title>
+    <script>
+    function prd()
+    {
+        document.getElementById("image").src="img.jpg";
+     }
+         function prf()
+    {
+        document.getElementById("image").src="python.png";
+     }
+     function pre()
+     {
+          var x = document.getElementById('image');
+             if (x.style.display === 'none') {
+             x.style.display = 'block';
+            } else {
+             x.style.display = 'none';
+            }
+          var elem = document.getElementById("hideb");
+    if (elem.value=="Hide") elem.value = "Unhide";
+    else elem.value = "Hide";
+     }
+</script>
+    <style>
+             #as{
+
+            height:350px;
+     }
+    </style>
+</head>
+<body>
+<div id="as">
+    <img id="image" src="python.png" width="300px" height="300px">
+</div>
+<div>
+<h3>Click the button to change the Image</h3>
+<button type="button" onclick='prd()'>Change</button>
+<input type="button" id="hideb" onclick='pre()' value="Hide"> </input>
+<button type="button" onclick="prf()">Reset</button>
+    <button type="button" onclick="window-print()">Print</button>
+</div>
+</body>
+</html>

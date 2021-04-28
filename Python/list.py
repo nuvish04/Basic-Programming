@@ -1,0 +1,17 @@
+b=["India",4,5,"Hi",0.2]
+print(b)
+b[2]=10
+print(b)
+b.append("Python")
+print(b)
+b.insert(2,"Hello")
+print(b)
+b.remove(0.2)
+print(b)
+print("Length=",len(b))
+b.append(4)
+print("Count =",b.count(4))
+b.reverse()
+print(b)
+b.pop(0)
+print(b)

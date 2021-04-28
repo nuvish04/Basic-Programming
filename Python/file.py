@@ -1,0 +1,12 @@
+x="Vishnu"
+s=open("file.txt","w")
+s.write(x)
+s.close()
+s=open("file.txt","a")
+x="\nPython"
+s.write(x)
+s.close()
+s=open("file.txt","r")
+#print(s.read())
+print(s.readline())
+print(s.readline())

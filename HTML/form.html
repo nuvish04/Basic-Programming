@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+<body>
+<form><h1 align="center">Registration Form</h1>
+    <table bgcolor="white" align="center" border = "1"  cellpadding="6">
+    <tr>
+        <th>Name :</th><td><input type="text" name="name"></td>
+        </tr>
+    <tr>
+    <th>Address:</th><td><textarea name="add"></textarea></td></tr>
+    <tr>
+        <th>Email:</th><td><input type="email"name="email"></td></tr>
+    <tr>
+    <th>DOB:</th><td><input type="date" name="dob"></td></tr>
+    <tr><th>Image:</th><td><input type="file" name="img"></td></tr>
+    <tr><th>Gender:</th><td><input type="radio" name="gender">Male<input type="radio" name="gender">Female<input type="radio" name="gender">Others</td></tr>
+    <tr><th>Phone :</th><td><input name="phone" type="number"></td></tr>
+    <tr><th>Language :</th><td> <input type="checkbox" name="lang">English
+    <input type="checkbox" name="lang">Malayalam
+        <input type="checkbox" name="lang"> Hindi</td></tr>
+    <tr><th>State :</th><td><select name="state">
+    <option>Kerala</option>
+    <option>Karnataka</option>
+    <option>Tamilnadu</option></td>
+    </select></tr>
+    <tr><th> Password :</th><td><input name="pass" type="password"></td></tr>
+    <tr><th colspan="2"><input type="submit" name="submit" value="Register">          <input type="reset" value="Clear"></th> </tr>
+    </table>
+</form>
+</body>
+</html>

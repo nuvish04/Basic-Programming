@@ -1,0 +1,20 @@
+import tkinter
+from tkinter import *
+def abc():
+    sel="You Gender is"+str(var.get())
+    f.config(text=sel)
+a=tkinter.Tk()
+a.title("RadioButton")
+a.minsize(400,400)
+b=tkinter.Label(a,text="Gender", font="Helvetica 13 bold",bg="pink" ,pady=10)
+b.grid(row=0,column=1)
+var=IntVar()
+c=tkinter.Radiobutton(a,text="Male", font="Helvetica 13 bold",bg="pink",pady=10,variable=var,value=1,command=abc)
+c.grid(row=0,column=2)
+d=tkinter.Radiobutton(a,text="Female", font="Helvetica 13 bold",bg="pink",pady=10,variable=var,value=2,command=abc)
+d.grid(row=0,column=3)
+e=tkinter.Radiobutton(a,text="Others", font="Helvetica 13 bold",bg="pink",pady=10,variable=var,value=3,command=abc)
+e.grid(row=0,column=4)
+f=tkinter.Label(a)
+f.grid(row=1,column=1)
+a.mainloop()

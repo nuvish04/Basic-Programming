@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fade</title>
+    <script type="text/javascript" src="jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $("img").click(function(){
+        $("#fd").fadeOut(1000);
+        });
+        $("img").click(function(){
+        $("#fd").fadeIn(1000);
+        });
+        });
+    </script>
+    <style type="text/css">
+        h2{
+            text-align:center;
+        }
+        div{
+            background:orange;
+            height:368px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fade in Jquery</h2>
+    <div>
+        <center>
+            <img id="fd" src="duke.jpg">
+        </center>
+    </div>
+</body>
+</html>

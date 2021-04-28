@@ -1,0 +1,7 @@
+t=('p','y','t','h','o','n')
+print(t.index("t"))
+k=('j','a','v','a')
+print(t+k)
+print(t[-3])
+print(k.count("a"))
+print(t[1:4])
